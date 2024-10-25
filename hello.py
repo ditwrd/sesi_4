@@ -1,5 +1,13 @@
+import polars as pl
+
 def main():
-    print("Hello from sesi-4!")
+    dummy_df = pl.DataFrame(
+        {
+            "waktu":[1,2,3],
+            "tegangan": [1,2,3]
+        }
+    )
+    print(dummy_df)
 
 
 if __name__ == "__main__":
